@@ -8,7 +8,7 @@ namespace Task_1
         {
             if (num == 1)// to execute 1
                 return false;
-            for(int i = 2; i <= Math.Sqrt(num); i++)//created a loop to move through array
+            for(int i = 2; i < num; i++)//created a loop to move through array
             {
                 if (num % i == 0)//made condition
                     return false;//if condition false return false
@@ -17,7 +17,7 @@ namespace Task_1
         }
         static void Main(string[] args)
         {
-            int n = Convert.ToInt32(Console.ReadLine());//created size_of_array
+            int n = Int.Parse(Console.ReadLine());//created size_of_array
 
             string s = Console.ReadLine();//saved entering string_of_numbers
 
@@ -27,7 +27,7 @@ namespace Task_1
 
             for (int i = 0; i < n; i++)//created a loop , which will continue a times
             {
-                int number = Convert.ToInt32(ss[i]);//convert elements of string_array to integer
+                int number = Int.Parse(ss[i]);//convert elements of string_array to integer
                 numbers[i] = number;//wrote the converted element in our integer_array
             }
 
